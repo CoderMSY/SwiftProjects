@@ -1,0 +1,26 @@
+PODS:
+  - CYLTabBarController (1.29.2):
+    - CYLTabBarController/Core (= 1.29.2)
+  - CYLTabBarController/Core (1.29.2)
+  - Kingfisher (7.1.2)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - CYLTabBarController
+  - Kingfisher
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - CYLTabBarController
+    - Kingfisher
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CYLTabBarController: db44b5901a28693a8a4279e4721b3aafdd36c178
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 3485d7e5986170eaa50e60264d38cd8d4674d533
+
+COCOAPODS: 1.11.2
