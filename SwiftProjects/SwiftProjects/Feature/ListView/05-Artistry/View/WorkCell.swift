@@ -23,6 +23,9 @@ class WorkCell: MSYBaseTableViewCell {
     lazy var moreInfoTextView: UITextView = {
         var moreInfoTextView = UITextView()
         moreInfoTextView.textColor = UIColor(white: 114 / 255, alpha: 1)
+        moreInfoTextView.isEditable = false
+        moreInfoTextView.isScrollEnabled = false
+//        moreInfoTextView.setContentCompressionResistancePriority(.required, for: .vertical)
         
         moreInfoTextView.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.footnote)
         return moreInfoTextView
@@ -44,10 +47,12 @@ class WorkCell: MSYBaseTableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         
         contentView.addSubview(workImageView)
         contentView.addSubview(workTitleLabel)
         contentView.addSubview(moreInfoTextView)
+        initConstraints()
     }
     
     required init?(coder: NSCoder) {

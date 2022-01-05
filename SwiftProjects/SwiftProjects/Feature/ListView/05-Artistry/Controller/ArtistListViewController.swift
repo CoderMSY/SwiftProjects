@@ -24,10 +24,15 @@ class ArtistListViewController: MSYBaseViewController {
         return artistList
     }()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.barTintColor = .systemGreen
+    
+        configNavBar()
+        createCloseItem()
         view.addSubview(tableView)
         initConstraints()
         
@@ -41,6 +46,44 @@ extension ArtistListViewController {
     private func initConstraints() {
         tableView.snp.makeConstraints { make in
             make.edges.equalTo(view)
+        }
+    }
+    private func configNavBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        if #available(iOS 13.0, *) {
+            let scrollBarApp = UINavigationBarAppearance()
+            scrollBarApp.backgroundColor = .black
+            scrollBarApp.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.white,
+                NSAttributedString.Key.font : UIFont(name: "Optima", size: 24.0) ?? UIFont.boldSystemFont(ofSize: 24.0)
+            ]
+            scrollBarApp.largeTitleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.systemBlue
+            ]
+            
+            let barApp = UINavigationBarAppearance()
+            barApp.backgroundColor = .systemGreen
+            barApp.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.white,
+                NSAttributedString.Key.font : UIFont(name: "Optima", size: 24.0) ?? UIFont.boldSystemFont(ofSize: 24.0)
+            ]
+            navigationController?.navigationBar.scrollEdgeAppearance = scrollBarApp
+            navigationController?.navigationBar.standardAppearance = barApp
+        } else {
+            navigationController?.navigationBar.barStyle = .black
+            navigationController?.navigationBar.tintColor = .white
+            navigationController?.navigationBar.barTintColor = .systemGreen
+//            navigationController?.navigationBar.backgroundColor = .black
+//            navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+            //设置大标题字体颜色
+            navigationController?.navigationBar.largeTitleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.systemBlue
+            ]
+            //设置小标题(默认标题)字体颜色
+            navigationController?.navigationBar.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.white,
+                NSAttributedString.Key.font : UIFont(name: "Optima", size: 24.0) ?? UIFont.boldSystemFont(ofSize: 24.0)
+            ]
         }
     }
 }

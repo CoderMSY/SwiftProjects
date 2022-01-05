@@ -15,6 +15,10 @@ class MSYNavigationController: UINavigationController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override var childForStatusBarStyle: UIViewController? {
+        return self.topViewController
+    }
 }
 
 extension MSYNavigationController {

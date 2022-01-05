@@ -19,6 +19,10 @@ class ArtistDetailViewController: MSYBaseViewController {
         return tableView
     }()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +33,11 @@ class ArtistDetailViewController: MSYBaseViewController {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalTo(view)
+        }
+        tableView.reloadData()
+        
+        NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification, object: .none, queue: OperationQueue.main) { [weak self] _ in
+            self?.tableView.reloadData()
         }
     }
 }

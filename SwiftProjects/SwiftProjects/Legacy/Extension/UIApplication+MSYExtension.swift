@@ -20,6 +20,31 @@ extension UIApplication {
             return UIApplication.shared.keyWindow
         }
     }
+    
+    class func msy_setStatusBar(color: UIColor) {
+        if #available(iOS 13.0, *) {
+            let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+//            scene?.statusBarManager?.statusBarStyle = barStyle
+//            scene?.statusBarManager?.bar
+        } else {
+//            UIApplication.shared.statusBarStyle = barStyle
+            
+            let statusBarWindow : UIView = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
+            let statusBar : UIView = statusBarWindow.value(forKey: "statusBar") as! UIView
+            if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+                statusBar.backgroundColor = color
+            }
+        }
+    }
+//    public class var msy_statusHeight: CGFloat {
+//        if #available(iOS 13.0, *) {
+//            let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+//            scene?.statusBarManager?.statusBarStyle = UIStatusBarStyle.lightContent
+//        } else {
+//            UIApplication.shared.statusBarStyle = .lightContent
+//
+//        }
+//    }
 }
 
 /** Objective-C

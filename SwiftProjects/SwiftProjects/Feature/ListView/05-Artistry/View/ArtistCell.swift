@@ -18,6 +18,7 @@ class ArtistCell: MSYBaseTableViewCell {
         let nameLab = UILabel()
         nameLab.textColor = .white
         nameLab.backgroundColor = .systemYellow
+        nameLab.textAlignment = .center
         return nameLab
     }()
     lazy var artistImageView: UIImageView = {
@@ -27,7 +28,8 @@ class ArtistCell: MSYBaseTableViewCell {
     }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        //UITableView分离线会被系统默认的选择效果给覆盖
+        selectionStyle = .none
         contentView.addSubview(artistImageView)
         contentView.addSubview(nameLab)
         contentView.addSubview(bioLab)
@@ -59,7 +61,7 @@ extension ArtistCell {
         nameLab.snp.makeConstraints { make in
             make.top.equalTo(artistImageView.snp.bottom).offset(5)
             make.leading.equalTo(contentView).offset(margin)
-            make.bottom.equalTo(contentView).offset(-marginTop)
+            make.bottom.lessThanOrEqualTo(contentView).offset(-marginTop)
             make.trailing.equalTo(contentView.snp.centerX)
             make.height.equalTo(25)
         }

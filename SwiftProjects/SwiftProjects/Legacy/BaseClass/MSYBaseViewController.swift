@@ -22,14 +22,14 @@ class MSYBaseViewController: UIViewController {
         let currentClass:AnyClass! = object_getClass(self)
         let className = NSStringFromClass(currentClass)
         
-        print("😄😄😄:\(className)" + #function)
+        print("😄😄😄:\(className) - " + #function)
     }
     
     deinit {
         let currentClass:AnyClass! = object_getClass(self)
         let className = NSStringFromClass(currentClass)
         
-        print("😂😂😂:\(className)" + #function)
+        print("😂😂😂:\(className) - " + #function)
     }
     
 

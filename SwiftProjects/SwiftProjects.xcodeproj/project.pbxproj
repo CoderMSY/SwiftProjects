@@ -22,6 +22,7 @@
 		E01E0B28277EA378004E05B7 /* TDItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E0B27277EA378004E05B7 /* TDItemManager.swift */; };
 		E01E0B2A277EA38C004E05B7 /* TDItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E0B29277EA38C004E05B7 /* TDItem.swift */; };
 		E01E0B2C277EA39B004E05B7 /* TDLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01E0B2B277EA39B004E05B7 /* TDLocation.swift */; };
+		E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0243C232785767900D40405 /* UIImage+MSYExtension.swift */; };
 		E0364645277D454900C0AE32 /* MSYListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364644277D454900C0AE32 /* MSYListViewController.swift */; };
 		E036464B277D84FB00C0AE32 /* FBMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036464A277D84FB00C0AE32 /* FBMeViewController.swift */; };
 		E036464E277D878700C0AE32 /* FBSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036464D277D878700C0AE32 /* FBSpecs.swift */; };
@@ -77,6 +78,7 @@
 		E01E0B27277EA378004E05B7 /* TDItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDItemManager.swift; sourceTree = "<group>"; };
 		E01E0B29277EA38C004E05B7 /* TDItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDItem.swift; sourceTree = "<group>"; };
 		E01E0B2B277EA39B004E05B7 /* TDLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDLocation.swift; sourceTree = "<group>"; };
+		E0243C232785767900D40405 /* UIImage+MSYExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+MSYExtension.swift"; sourceTree = "<group>"; };
 		E0364644277D454900C0AE32 /* MSYListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYListViewController.swift; sourceTree = "<group>"; };
 		E036464A277D84FB00C0AE32 /* FBMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeViewController.swift; sourceTree = "<group>"; };
 		E036464D277D878700C0AE32 /* FBSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBSpecs.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				E0364658277D8E6400C0AE32 /* UIColor+MSYExtension.swift */,
 				E0063BC127842B1800E7FEBD /* UIApplication+MSYExtension.swift */,
 				E0063BC5278436B900E7FEBD /* UIView+MSYExtension.swift */,
+				E0243C232785767900D40405 /* UIImage+MSYExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				E01E0B23277EA2E4004E05B7 /* TDItemListDataProvider.swift in Sources */,
 				E0D33A92277C12A1002ECAF1 /* DataSource.swift in Sources */,
 				E0364650277D881400C0AE32 /* UIColor+FBExtension.swift in Sources */,
+				E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */,
 				E036464E277D878700C0AE32 /* FBSpecs.swift in Sources */,
 				E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */,
 				E0F38163277B1C67002CF7B3 /* MSYTabBarCtrConfig.swift in Sources */,
