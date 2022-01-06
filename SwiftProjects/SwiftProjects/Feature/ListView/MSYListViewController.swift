@@ -12,6 +12,8 @@ class MSYListViewController: MSYBaseViewController {
     static let kListTitle_p04 = "Project 04 - TodoTDD"
     static let kListTitle_p05 = "Project 05 - Artistry"
     static let kListTitle_p06 = "Project 06 - CandySearch"
+    static let kListTitle_p07 = "Project 07 - PokedexGo"
+    static let kListTitle_p08 = "Project 08 - SimpleRSSReader"
     
     static let kListTitle_p09 = "Project 09 - PhotoScroll"
     static let kListTitle_p10 = "Project 10 - Interests"
@@ -31,19 +33,21 @@ extension MSYListViewController {
     
     
     private func setUpTableView() {
-        let section1 = Section(items: [
+        let section1 = Section(headerTitle: "UITableView", items: [
             MSYListViewController.kListTitle_p03,
             MSYListViewController.kListTitle_p04,
             MSYListViewController.kListTitle_p05,
             MSYListViewController.kListTitle_p06,
+            MSYListViewController.kListTitle_p07,
+            MSYListViewController.kListTitle_p08,
         ])
         
-        let section2 = Section(items: [
+        let section2 = Section(headerTitle: "UIScrollView", items: [
             MSYListViewController.kListTitle_p09,
             MSYListViewController.kListTitle_p10,
         ])
         
-        let section3 = Section(items: [
+        let section3 = Section(headerTitle: "UICollectionView", items: [
             MSYListViewController.kListTitle_p20,
             MSYListViewController.kListTitle_p21,
         ])
@@ -55,7 +59,7 @@ extension MSYListViewController {
             return cell
         }
         
-        let pluginTableView = PluginTableView(frame: view.bounds, style: .plain, dataSource: dataSource, configurator: configuartor)
+        let pluginTableView = PluginTableView(frame: view.bounds, style: .grouped, dataSource: dataSource, configurator: configuartor)
         pluginTableView.tableView.tableFooterView = UIView()
         view.addSubview(pluginTableView)
         
@@ -89,6 +93,10 @@ extension MSYListViewController {
                 navCtr.modalPresentationStyle = .fullScreen
                 self?.present(navCtr, animated: true, completion: nil)
                 break
+            case MSYListViewController.kListTitle_p07:
+                self?.presentNextPage(ctr: PokedexGoListViewController(),
+                                      title: selectItem)
+                break
             default:
                 break
             }
@@ -104,6 +112,13 @@ extension MSYListViewController {
                 break
             }
         }
+    }
+    
+    private func presentNextPage(ctr: UIViewController, title: String?) {
+        ctr.title = title
+        let navCtr = MSYNavigationController(rootViewController: ctr)
+        navCtr.modalPresentationStyle = .fullScreen
+        self.present(navCtr, animated: true, completion: nil)
     }
 }
 

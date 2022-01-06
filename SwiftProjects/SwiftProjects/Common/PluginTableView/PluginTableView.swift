@@ -23,6 +23,10 @@ class PluginTableView<Configurator: ConfiguratorType>: UIView, UITableViewDataSo
         super.init(frame: frame)
         tableView.dataSource = self
         tableView.delegate = self
+        if #available(iOS 15.0, *) {
+            tableView.sectionHeaderTopPadding = 0
+        }
+        
         self.addSubview(tableView)
         configurator.registerCells(in: tableView)
     }
@@ -44,6 +48,19 @@ class PluginTableView<Configurator: ConfiguratorType>: UIView, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = dataSource.item(at: indexPath)
         return configurator.configuredCell(for: item, tableView: tableView, indexPath: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let sectionModel = dataSource.sections[section]
+        
+        return sectionModel.headerTitle
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return nil
     }
 
     // MARK: - 代理

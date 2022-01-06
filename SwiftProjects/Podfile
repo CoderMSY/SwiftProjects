@@ -8,6 +8,9 @@ target 'SwiftProjects' do
   pod 'Kingfisher' 
   pod 'CYLTabBarController'
 
+  #07-PokedexGo
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   # Pods for SwiftProjects
 

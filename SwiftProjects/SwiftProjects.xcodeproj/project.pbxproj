@@ -34,6 +34,13 @@
 		E0364659277D8E6400C0AE32 /* UIColor+MSYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364658277D8E6400C0AE32 /* UIColor+MSYExtension.swift */; };
 		E036465B277D924A00C0AE32 /* FBTableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036465A277D924A00C0AE32 /* FBTableKeys.swift */; };
 		E036465D277D929C00C0AE32 /* FBMeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036465C277D929C00C0AE32 /* FBMeUser.swift */; };
+		E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A12786A30900E8DE2C /* PokedexGoListViewController.swift */; };
+		E04F75A42786DD5900E8DE2C /* PokedexGoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A32786DD5900E8DE2C /* PokedexGoListCell.swift */; };
+		E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A52786E23D00E8DE2C /* Pokemon.swift */; };
+		E04F75A82786E2ED00E8DE2C /* PokemonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A72786E2ED00E8DE2C /* PokemonConstants.swift */; };
+		E04F75AA2786E3AC00E8DE2C /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A92786E3AC00E8DE2C /* LibraryAPI.swift */; };
+		E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75AB2786EF8B00E8DE2C /* PersistencyManager.swift */; };
+		E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75AD2786F5C600E8DE2C /* PokedexGoDetailViewController.swift */; };
 		E05505FD27859A5700A8E175 /* CandyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05505FC27859A5700A8E175 /* CandyDetailViewController.swift */; };
 		E0872EA627848E4200C6B2DF /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0872EA527848E4200C6B2DF /* ArtistDetailViewController.swift */; };
 		E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0872EA727848F8400C6B2DF /* WorkCell.swift */; };
@@ -93,6 +100,13 @@
 		E0364658277D8E6400C0AE32 /* UIColor+MSYExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MSYExtension.swift"; sourceTree = "<group>"; };
 		E036465A277D924A00C0AE32 /* FBTableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBTableKeys.swift; sourceTree = "<group>"; };
 		E036465C277D929C00C0AE32 /* FBMeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeUser.swift; sourceTree = "<group>"; };
+		E04F75A12786A30900E8DE2C /* PokedexGoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoListViewController.swift; sourceTree = "<group>"; };
+		E04F75A32786DD5900E8DE2C /* PokedexGoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoListCell.swift; sourceTree = "<group>"; };
+		E04F75A52786E23D00E8DE2C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		E04F75A72786E2ED00E8DE2C /* PokemonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonConstants.swift; sourceTree = "<group>"; };
+		E04F75A92786E3AC00E8DE2C /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		E04F75AB2786EF8B00E8DE2C /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		E04F75AD2786F5C600E8DE2C /* PokedexGoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoDetailViewController.swift; sourceTree = "<group>"; };
 		E05505FC27859A5700A8E175 /* CandyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyDetailViewController.swift; sourceTree = "<group>"; };
 		E0872EA527848E4200C6B2DF /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		E0872EA727848F8400C6B2DF /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
@@ -340,10 +354,65 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		E04F759B2786909400E8DE2C /* 07-PokedexGo */ = {
+			isa = PBXGroup;
+			children = (
+				E04F75A02786A13B00E8DE2C /* API */,
+				E04F759F2786A13400E8DE2C /* Controller */,
+				E04F759E2786A12E00E8DE2C /* View */,
+				E04F759D2786A12600E8DE2C /* Model */,
+				E04F759C2786A12000E8DE2C /* Helper */,
+			);
+			path = "07-PokedexGo";
+			sourceTree = "<group>";
+		};
+		E04F759C2786A12000E8DE2C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E04F75A72786E2ED00E8DE2C /* PokemonConstants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E04F759D2786A12600E8DE2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E04F75A52786E23D00E8DE2C /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E04F759E2786A12E00E8DE2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E04F75A32786DD5900E8DE2C /* PokedexGoListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E04F759F2786A13400E8DE2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E04F75A12786A30900E8DE2C /* PokedexGoListViewController.swift */,
+				E04F75AD2786F5C600E8DE2C /* PokedexGoDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E04F75A02786A13B00E8DE2C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E04F75A92786E3AC00E8DE2C /* LibraryAPI.swift */,
+				E04F75AB2786EF8B00E8DE2C /* PersistencyManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		E0D33A85277BFFE5002ECAF1 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
 				E0364644277D454900C0AE32 /* MSYListViewController.swift */,
+				E04F759B2786909400E8DE2C /* 07-PokedexGo */,
 				E0243C252785880500D40405 /* 06-CandySearch */,
 				E0063BC727844DE000E7FEBD /* 05-Artistry */,
 				E01E0B1F277EA1FC004E05B7 /* 04-TodoTDD */,
@@ -597,6 +666,8 @@
 				E0063BD12784539400E7FEBD /* Artist.swift in Sources */,
 				E0063BC227842B1800E7FEBD /* UIApplication+MSYExtension.swift in Sources */,
 				E01E0B28277EA378004E05B7 /* TDItemManager.swift in Sources */,
+				E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */,
+				E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */,
 				E0D33A9E277C34CA002ECAF1 /* ContactViewController.swift in Sources */,
 				E0D33A9C277C33AD002ECAF1 /* ProductListViewController.swift in Sources */,
 				E0D33AA6277C65EF002ECAF1 /* ProductViewController.swift in Sources */,
@@ -611,6 +682,8 @@
 				E01E0B2A277EA38C004E05B7 /* TDItem.swift in Sources */,
 				E0D33AA4277C6435002ECAF1 /* Product.swift in Sources */,
 				E0063BCF27844EE300E7FEBD /* ArtistCell.swift in Sources */,
+				E04F75A42786DD5900E8DE2C /* PokedexGoListCell.swift in Sources */,
+				E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */,
 				E01E0B21277EA268004E05B7 /* TDItemListViewController.swift in Sources */,
 				E01E0B23277EA2E4004E05B7 /* TDItemListDataProvider.swift in Sources */,
 				E0D33A92277C12A1002ECAF1 /* DataSource.swift in Sources */,
@@ -618,6 +691,7 @@
 				E0364650277D881400C0AE32 /* UIColor+FBExtension.swift in Sources */,
 				E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */,
 				E036464E277D878700C0AE32 /* FBSpecs.swift in Sources */,
+				E04F75A82786E2ED00E8DE2C /* PokemonConstants.swift in Sources */,
 				E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */,
 				E0F38163277B1C67002CF7B3 /* MSYTabBarCtrConfig.swift in Sources */,
 				E0243C292785885800D40405 /* CandyListViewController.swift in Sources */,
@@ -634,8 +708,10 @@
 				E0D33A93277C12A1002ECAF1 /* ATShareMacro.swift in Sources */,
 				E036465B277D924A00C0AE32 /* FBTableKeys.swift in Sources */,
 				E0364659277D8E6400C0AE32 /* UIColor+MSYExtension.swift in Sources */,
+				E04F75AA2786E3AC00E8DE2C /* LibraryAPI.swift in Sources */,
 				E0364645277D454900C0AE32 /* MSYListViewController.swift in Sources */,
 				E036465D277D929C00C0AE32 /* FBMeUser.swift in Sources */,
+				E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */,
 				E0D33A9A277C32EF002ECAF1 /* GoodAsOldPhonesTabBarCtr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

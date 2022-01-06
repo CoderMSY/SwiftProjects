@@ -9,5 +9,6 @@
 import Foundation
 
 struct Section<Item> {
+    var headerTitle: String?
     var items: [Item]   
 }
