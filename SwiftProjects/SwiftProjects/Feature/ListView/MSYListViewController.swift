@@ -11,6 +11,7 @@ class MSYListViewController: MSYBaseViewController {
     static let kListTitle_p03 = "Project 03 - FacebookMe"
     static let kListTitle_p04 = "Project 04 - TodoTDD"
     static let kListTitle_p05 = "Project 05 - Artistry"
+    static let kListTitle_p06 = "Project 06 - CandySearch"
     
     static let kListTitle_p09 = "Project 09 - PhotoScroll"
     static let kListTitle_p10 = "Project 10 - Interests"
@@ -34,6 +35,7 @@ extension MSYListViewController {
             MSYListViewController.kListTitle_p03,
             MSYListViewController.kListTitle_p04,
             MSYListViewController.kListTitle_p05,
+            MSYListViewController.kListTitle_p06,
         ])
         
         let section2 = Section(items: [
@@ -75,6 +77,13 @@ extension MSYListViewController {
                 break
             case MSYListViewController.kListTitle_p05:
                 let ctr = ArtistListViewController()
+                ctr.title = selectItem
+                let navCtr = MSYNavigationController(rootViewController: ctr)
+                navCtr.modalPresentationStyle = .fullScreen
+                self?.present(navCtr, animated: true, completion: nil)
+                break
+            case MSYListViewController.kListTitle_p06:
+                let ctr = CandyListViewController()
                 ctr.title = selectItem
                 let navCtr = MSYNavigationController(rootViewController: ctr)
                 navCtr.modalPresentationStyle = .fullScreen

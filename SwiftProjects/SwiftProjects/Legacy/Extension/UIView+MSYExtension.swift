@@ -23,4 +23,9 @@ extension UIView {
             return UIApplication.shared.statusBarFrame.size.height
         }
     }
+    
+    public class var msy_navBarHeight: CGFloat {
+        //navigationController?.navigationBar.bounds.size.height iOS15时包含状态栏高度
+        return 44.0
+    }
 }
