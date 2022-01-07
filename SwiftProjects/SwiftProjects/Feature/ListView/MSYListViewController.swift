@@ -97,6 +97,9 @@ extension MSYListViewController {
                 self?.presentNextPage(ctr: PokedexGoListViewController(),
                                       title: selectItem)
                 break
+            case MSYListViewController.kListTitle_p08:
+                self?.presentNextPage(ctr: NewsListViewController(),
+                                      title: selectItem)
             default:
                 break
             }

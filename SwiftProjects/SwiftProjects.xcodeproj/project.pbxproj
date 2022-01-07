@@ -34,6 +34,9 @@
 		E0364659277D8E6400C0AE32 /* UIColor+MSYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364658277D8E6400C0AE32 /* UIColor+MSYExtension.swift */; };
 		E036465B277D924A00C0AE32 /* FBTableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036465A277D924A00C0AE32 /* FBTableKeys.swift */; };
 		E036465D277D929C00C0AE32 /* FBMeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036465C277D929C00C0AE32 /* FBMeUser.swift */; };
+		E039AA8E2787240A00E7E45D /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039AA8D2787240A00E7E45D /* NewsListViewController.swift */; };
+		E039AA90278724BF00E7E45D /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039AA8F278724BF00E7E45D /* NewsListCell.swift */; };
+		E039AA922787294100E7E45D /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039AA912787294100E7E45D /* FeedParser.swift */; };
 		E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A12786A30900E8DE2C /* PokedexGoListViewController.swift */; };
 		E04F75A42786DD5900E8DE2C /* PokedexGoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A32786DD5900E8DE2C /* PokedexGoListCell.swift */; };
 		E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75A52786E23D00E8DE2C /* Pokemon.swift */; };
@@ -100,6 +103,9 @@
 		E0364658277D8E6400C0AE32 /* UIColor+MSYExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MSYExtension.swift"; sourceTree = "<group>"; };
 		E036465A277D924A00C0AE32 /* FBTableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBTableKeys.swift; sourceTree = "<group>"; };
 		E036465C277D929C00C0AE32 /* FBMeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeUser.swift; sourceTree = "<group>"; };
+		E039AA8D2787240A00E7E45D /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		E039AA8F278724BF00E7E45D /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
+		E039AA912787294100E7E45D /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
 		E04F75A12786A30900E8DE2C /* PokedexGoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoListViewController.swift; sourceTree = "<group>"; };
 		E04F75A32786DD5900E8DE2C /* PokedexGoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoListCell.swift; sourceTree = "<group>"; };
 		E04F75A52786E23D00E8DE2C /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
@@ -354,6 +360,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		E039AA8B27871FC600E7E45D /* 08-SimpleRSSReader */ = {
+			isa = PBXGroup;
+			children = (
+				E039AA8D2787240A00E7E45D /* NewsListViewController.swift */,
+				E039AA8F278724BF00E7E45D /* NewsListCell.swift */,
+				E039AA912787294100E7E45D /* FeedParser.swift */,
+			);
+			path = "08-SimpleRSSReader";
+			sourceTree = "<group>";
+		};
 		E04F759B2786909400E8DE2C /* 07-PokedexGo */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				E0364644277D454900C0AE32 /* MSYListViewController.swift */,
+				E039AA8B27871FC600E7E45D /* 08-SimpleRSSReader */,
 				E04F759B2786909400E8DE2C /* 07-PokedexGo */,
 				E0243C252785880500D40405 /* 06-CandySearch */,
 				E0063BC727844DE000E7FEBD /* 05-Artistry */,
@@ -680,6 +697,7 @@
 				E0F3814F277B1B09002CF7B3 /* SceneDelegate.swift in Sources */,
 				E0D33A90277C12A1002ECAF1 /* Configurator.swift in Sources */,
 				E01E0B2A277EA38C004E05B7 /* TDItem.swift in Sources */,
+				E039AA922787294100E7E45D /* FeedParser.swift in Sources */,
 				E0D33AA4277C6435002ECAF1 /* Product.swift in Sources */,
 				E0063BCF27844EE300E7FEBD /* ArtistCell.swift in Sources */,
 				E04F75A42786DD5900E8DE2C /* PokedexGoListCell.swift in Sources */,
@@ -691,6 +709,7 @@
 				E0364650277D881400C0AE32 /* UIColor+FBExtension.swift in Sources */,
 				E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */,
 				E036464E277D878700C0AE32 /* FBSpecs.swift in Sources */,
+				E039AA90278724BF00E7E45D /* NewsListCell.swift in Sources */,
 				E04F75A82786E2ED00E8DE2C /* PokemonConstants.swift in Sources */,
 				E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */,
 				E0F38163277B1C67002CF7B3 /* MSYTabBarCtrConfig.swift in Sources */,
@@ -699,6 +718,7 @@
 				E0063BCD27844E3B00E7FEBD /* ArtistListViewController.swift in Sources */,
 				E0063BC6278436B900E7FEBD /* UIView+MSYExtension.swift in Sources */,
 				E0063BC42784334200E7FEBD /* TDDetailViewController.swift in Sources */,
+				E039AA8E2787240A00E7E45D /* NewsListViewController.swift in Sources */,
 				E036464B277D84FB00C0AE32 /* FBMeViewController.swift in Sources */,
 				E0243C2B2785888C00D40405 /* Candy.swift in Sources */,
 				E0364655277D8D2E00C0AE32 /* MSYBaseTableViewCell.swift in Sources */,
