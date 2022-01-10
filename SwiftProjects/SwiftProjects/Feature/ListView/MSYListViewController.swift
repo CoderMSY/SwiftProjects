@@ -93,6 +93,9 @@ extension MSYListViewController {
             case MSYListViewController.kListTitle_p09:
                 self?.presentNextPage(ctr: PhotoCollectionViewController(),
                                       title: selectItem)
+            case MSYListViewController.kListTitle_p10:
+                self?.presentNextPage(ctr: InterestsViewController(),
+                                      title: selectItem)
             default:
                 break
             }

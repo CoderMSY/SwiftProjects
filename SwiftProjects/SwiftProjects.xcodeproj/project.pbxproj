@@ -52,6 +52,9 @@
 		E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75AB2786EF8B00E8DE2C /* PersistencyManager.swift */; };
 		E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F75AD2786F5C600E8DE2C /* PokedexGoDetailViewController.swift */; };
 		E05505FD27859A5700A8E175 /* CandyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05505FC27859A5700A8E175 /* CandyDetailViewController.swift */; };
+		E05FD383278C318F00FFEFCB /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05FD382278C318F00FFEFCB /* InterestsViewController.swift */; };
+		E05FD385278C333000FFEFCB /* InterestsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05FD384278C333000FFEFCB /* InterestsCollectionViewCell.swift */; };
+		E05FD387278C340900FFEFCB /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05FD386278C340900FFEFCB /* Interest.swift */; };
 		E0872EA627848E4200C6B2DF /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0872EA527848E4200C6B2DF /* ArtistDetailViewController.swift */; };
 		E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0872EA727848F8400C6B2DF /* WorkCell.swift */; };
 		E0D33A8F277C12A1002ECAF1 /* PluginTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D33A88277C12A1002ECAF1 /* PluginTableView.swift */; };
@@ -128,6 +131,9 @@
 		E04F75AB2786EF8B00E8DE2C /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		E04F75AD2786F5C600E8DE2C /* PokedexGoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoDetailViewController.swift; sourceTree = "<group>"; };
 		E05505FC27859A5700A8E175 /* CandyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyDetailViewController.swift; sourceTree = "<group>"; };
+		E05FD382278C318F00FFEFCB /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		E05FD384278C333000FFEFCB /* InterestsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E05FD386278C340900FFEFCB /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		E0872EA527848E4200C6B2DF /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		E0872EA727848F8400C6B2DF /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
 		E0D33A88277C12A1002ECAF1 /* PluginTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginTableView.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		E00635E5278814F10017F7D3 /* Example_ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				E05FD381278C314100FFEFCB /* 10-Interests */,
 				E00635E6278815230017F7D3 /* 09-PhotoScroll */,
 			);
 			path = Example_ScrollView;
@@ -492,6 +499,16 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		E05FD381278C314100FFEFCB /* 10-Interests */ = {
+			isa = PBXGroup;
+			children = (
+				E05FD382278C318F00FFEFCB /* InterestsViewController.swift */,
+				E05FD384278C333000FFEFCB /* InterestsCollectionViewCell.swift */,
+				E05FD386278C340900FFEFCB /* Interest.swift */,
+			);
+			path = "10-Interests";
+			sourceTree = "<group>";
+		};
 		E0D33A85277BFFE5002ECAF1 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +768,7 @@
 				E0D33AAB277C6D28002ECAF1 /* Stopwatch.swift in Sources */,
 				E0063BD12784539400E7FEBD /* Artist.swift in Sources */,
 				E0063BC227842B1800E7FEBD /* UIApplication+MSYExtension.swift in Sources */,
+				E05FD385278C333000FFEFCB /* InterestsCollectionViewCell.swift in Sources */,
 				E01E0B28277EA378004E05B7 /* TDItemManager.swift in Sources */,
 				E00635FA27883D440017F7D3 /* ZoomedPhotoViewController.swift in Sources */,
 				E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */,
@@ -790,6 +808,7 @@
 				E0063BD5278453C900E7FEBD /* Work.swift in Sources */,
 				E0063BCD27844E3B00E7FEBD /* ArtistListViewController.swift in Sources */,
 				E0063BC6278436B900E7FEBD /* UIView+MSYExtension.swift in Sources */,
+				E05FD387278C340900FFEFCB /* Interest.swift in Sources */,
 				E00635F4278821A40017F7D3 /* PhotoCommentViewController.swift in Sources */,
 				E0063BC42784334200E7FEBD /* TDDetailViewController.swift in Sources */,
 				E039AA8E2787240A00E7E45D /* NewsListViewController.swift in Sources */,
@@ -809,6 +828,7 @@
 				E036465D277D929C00C0AE32 /* FBMeUser.swift in Sources */,
 				E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */,
 				E0D33A9A277C32EF002ECAF1 /* GoodAsOldPhonesTabBarCtr.swift in Sources */,
+				E05FD383278C318F00FFEFCB /* InterestsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
