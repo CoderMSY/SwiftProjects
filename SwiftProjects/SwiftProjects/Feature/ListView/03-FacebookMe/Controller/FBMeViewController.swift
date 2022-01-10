@@ -33,6 +33,7 @@ class FBMeViewController: MSYBaseViewController {
         return view
     }()
     override func viewDidLoad() {
+        createCloseItem()
         view.backgroundColor = FBSpecs.color.gray
         title = "Facebook"
         navigationController?.navigationBar.barTintColor = FBSpecs.color.tint

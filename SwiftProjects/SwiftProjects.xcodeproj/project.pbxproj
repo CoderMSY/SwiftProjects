@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A4F37F87084D5408F4F72E26 /* Pods_SwiftProjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413442FB6586B0E95965910F /* Pods_SwiftProjects.framework */; };
+		E00635E9278818730017F7D3 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635E8278818730017F7D3 /* PhotoCollectionViewController.swift */; };
+		E00635EB2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635EA2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift */; };
+		E00635EE278819F50017F7D3 /* PhotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635ED278819F50017F7D3 /* PhotoCollectionCell.swift */; };
+		E00635F027881E7F0017F7D3 /* UIImage+PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635EF27881E7F0017F7D3 /* UIImage+PhotoCollection.swift */; };
+		E00635F4278821A40017F7D3 /* PhotoCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635F3278821A40017F7D3 /* PhotoCommentViewController.swift */; };
+		E00635F727882CD90017F7D3 /* PhotoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635F627882CD90017F7D3 /* PhotoPageViewController.swift */; };
+		E00635FA27883D440017F7D3 /* ZoomedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635F927883D440017F7D3 /* ZoomedPhotoViewController.swift */; };
 		E0063BC0278415C000E7FEBD /* TDAddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0063BBF278415C000E7FEBD /* TDAddItemViewController.swift */; };
 		E0063BC227842B1800E7FEBD /* UIApplication+MSYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0063BC127842B1800E7FEBD /* UIApplication+MSYExtension.swift */; };
 		E0063BC42784334200E7FEBD /* TDDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0063BC32784334200E7FEBD /* TDDetailViewController.swift */; };
@@ -77,6 +84,13 @@
 		413442FB6586B0E95965910F /* Pods_SwiftProjects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B39F81A3B319EC57AF0E507 /* Pods-SwiftProjects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjects.release.xcconfig"; path = "Target Support Files/Pods-SwiftProjects/Pods-SwiftProjects.release.xcconfig"; sourceTree = "<group>"; };
 		8AFA3D98B2232C3B120FDD56 /* Pods-SwiftProjects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjects.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProjects/Pods-SwiftProjects.debug.xcconfig"; sourceTree = "<group>"; };
+		E00635E8278818730017F7D3 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		E00635EA2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		E00635ED278819F50017F7D3 /* PhotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCell.swift; sourceTree = "<group>"; };
+		E00635EF27881E7F0017F7D3 /* UIImage+PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+PhotoCollection.swift"; sourceTree = "<group>"; };
+		E00635F3278821A40017F7D3 /* PhotoCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCommentViewController.swift; sourceTree = "<group>"; };
+		E00635F627882CD90017F7D3 /* PhotoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPageViewController.swift; sourceTree = "<group>"; };
+		E00635F927883D440017F7D3 /* ZoomedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomedPhotoViewController.swift; sourceTree = "<group>"; };
 		E0063BBF278415C000E7FEBD /* TDAddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAddItemViewController.swift; sourceTree = "<group>"; };
 		E0063BC127842B1800E7FEBD /* UIApplication+MSYExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+MSYExtension.swift"; sourceTree = "<group>"; };
 		E0063BC32784334200E7FEBD /* TDDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDetailViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +185,59 @@
 				4B39F81A3B319EC57AF0E507 /* Pods-SwiftProjects.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E00635E5278814F10017F7D3 /* Example_ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E00635E6278815230017F7D3 /* 09-PhotoScroll */,
+			);
+			path = Example_ScrollView;
+			sourceTree = "<group>";
+		};
+		E00635E6278815230017F7D3 /* 09-PhotoScroll */ = {
+			isa = PBXGroup;
+			children = (
+				E00635F1278821750017F7D3 /* Collection */,
+				E00635F5278829320017F7D3 /* Page */,
+				E00635F22788218A0017F7D3 /* Comment */,
+				E00635F827883D090017F7D3 /* zooming */,
+			);
+			path = "09-PhotoScroll";
+			sourceTree = "<group>";
+		};
+		E00635F1278821750017F7D3 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E00635E8278818730017F7D3 /* PhotoCollectionViewController.swift */,
+				E00635ED278819F50017F7D3 /* PhotoCollectionCell.swift */,
+				E00635EF27881E7F0017F7D3 /* UIImage+PhotoCollection.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		E00635F22788218A0017F7D3 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				E00635F3278821A40017F7D3 /* PhotoCommentViewController.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		E00635F5278829320017F7D3 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				E00635F627882CD90017F7D3 /* PhotoPageViewController.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		E00635F827883D090017F7D3 /* zooming */ = {
+			isa = PBXGroup;
+			children = (
+				E00635F927883D440017F7D3 /* ZoomedPhotoViewController.swift */,
+			);
+			path = zooming;
 			sourceTree = "<group>";
 		};
 		E0063BC727844DE000E7FEBD /* 05-Artistry */ = {
@@ -336,6 +403,7 @@
 				E0D33A9F277C6261002ECAF1 /* MSYNavigationController.swift */,
 				E0D33A8E277C12A1002ECAF1 /* MSYBaseViewController.swift */,
 				E0364654277D8D2E00C0AE32 /* MSYBaseTableViewCell.swift */,
+				E00635EA2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -428,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				E0364644277D454900C0AE32 /* MSYListViewController.swift */,
+				E00635E5278814F10017F7D3 /* Example_ScrollView */,
 				E039AA8B27871FC600E7E45D /* 08-SimpleRSSReader */,
 				E04F759B2786909400E8DE2C /* 07-PokedexGo */,
 				E0243C252785880500D40405 /* 06-CandySearch */,
@@ -683,6 +752,7 @@
 				E0063BD12784539400E7FEBD /* Artist.swift in Sources */,
 				E0063BC227842B1800E7FEBD /* UIApplication+MSYExtension.swift in Sources */,
 				E01E0B28277EA378004E05B7 /* TDItemManager.swift in Sources */,
+				E00635FA27883D440017F7D3 /* ZoomedPhotoViewController.swift in Sources */,
 				E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */,
 				E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */,
 				E0D33A9E277C34CA002ECAF1 /* ContactViewController.swift in Sources */,
@@ -700,14 +770,17 @@
 				E039AA922787294100E7E45D /* FeedParser.swift in Sources */,
 				E0D33AA4277C6435002ECAF1 /* Product.swift in Sources */,
 				E0063BCF27844EE300E7FEBD /* ArtistCell.swift in Sources */,
+				E00635EE278819F50017F7D3 /* PhotoCollectionCell.swift in Sources */,
 				E04F75A42786DD5900E8DE2C /* PokedexGoListCell.swift in Sources */,
 				E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */,
 				E01E0B21277EA268004E05B7 /* TDItemListViewController.swift in Sources */,
 				E01E0B23277EA2E4004E05B7 /* TDItemListDataProvider.swift in Sources */,
 				E0D33A92277C12A1002ECAF1 /* DataSource.swift in Sources */,
+				E00635F027881E7F0017F7D3 /* UIImage+PhotoCollection.swift in Sources */,
 				E05505FD27859A5700A8E175 /* CandyDetailViewController.swift in Sources */,
 				E0364650277D881400C0AE32 /* UIColor+FBExtension.swift in Sources */,
 				E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */,
+				E00635EB2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift in Sources */,
 				E036464E277D878700C0AE32 /* FBSpecs.swift in Sources */,
 				E039AA90278724BF00E7E45D /* NewsListCell.swift in Sources */,
 				E04F75A82786E2ED00E8DE2C /* PokemonConstants.swift in Sources */,
@@ -717,18 +790,21 @@
 				E0063BD5278453C900E7FEBD /* Work.swift in Sources */,
 				E0063BCD27844E3B00E7FEBD /* ArtistListViewController.swift in Sources */,
 				E0063BC6278436B900E7FEBD /* UIView+MSYExtension.swift in Sources */,
+				E00635F4278821A40017F7D3 /* PhotoCommentViewController.swift in Sources */,
 				E0063BC42784334200E7FEBD /* TDDetailViewController.swift in Sources */,
 				E039AA8E2787240A00E7E45D /* NewsListViewController.swift in Sources */,
 				E036464B277D84FB00C0AE32 /* FBMeViewController.swift in Sources */,
 				E0243C2B2785888C00D40405 /* Candy.swift in Sources */,
 				E0364655277D8D2E00C0AE32 /* MSYBaseTableViewCell.swift in Sources */,
 				E0D33A94277C12A1002ECAF1 /* MSYBaseViewController.swift in Sources */,
+				E00635F727882CD90017F7D3 /* PhotoPageViewController.swift in Sources */,
 				E0872EA627848E4200C6B2DF /* ArtistDetailViewController.swift in Sources */,
 				E0D33A96277C1453002ECAF1 /* MSYKitFoundationViewController.swift in Sources */,
 				E0D33A93277C12A1002ECAF1 /* ATShareMacro.swift in Sources */,
 				E036465B277D924A00C0AE32 /* FBTableKeys.swift in Sources */,
 				E0364659277D8E6400C0AE32 /* UIColor+MSYExtension.swift in Sources */,
 				E04F75AA2786E3AC00E8DE2C /* LibraryAPI.swift in Sources */,
+				E00635E9278818730017F7D3 /* PhotoCollectionViewController.swift in Sources */,
 				E0364645277D454900C0AE32 /* MSYListViewController.swift in Sources */,
 				E036465D277D929C00C0AE32 /* FBMeUser.swift in Sources */,
 				E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */,

@@ -68,30 +68,20 @@ extension MSYListViewController {
             let selectItem = pluginTableView.dataSource.item(at: indexPath)
             switch selectItem {
             case MSYListViewController.kListTitle_p03:
-                let navCtr = MSYNavigationController(rootViewController: FBMeViewController())
-                self?.present(navCtr, animated: true, completion: nil)
-//                self?.navigationController?.pushViewController(FBMeViewController(), animated: true)
+                self?.presentNextPage(ctr: FBMeViewController(),
+                                      title: selectItem)
                 break
             case MSYListViewController.kListTitle_p04:
-                let ctr = TDItemListViewController()
-                ctr.title = selectItem
-                let navCtr = MSYNavigationController(rootViewController: ctr)
-                navCtr.modalPresentationStyle = .fullScreen
-                self?.present(navCtr, animated: true, completion: nil)
+                self?.presentNextPage(ctr: TDItemListViewController(),
+                                      title: selectItem)
                 break
             case MSYListViewController.kListTitle_p05:
-                let ctr = ArtistListViewController()
-                ctr.title = selectItem
-                let navCtr = MSYNavigationController(rootViewController: ctr)
-                navCtr.modalPresentationStyle = .fullScreen
-                self?.present(navCtr, animated: true, completion: nil)
+                self?.presentNextPage(ctr: ArtistListViewController(),
+                                      title: selectItem)
                 break
             case MSYListViewController.kListTitle_p06:
-                let ctr = CandyListViewController()
-                ctr.title = selectItem
-                let navCtr = MSYNavigationController(rootViewController: ctr)
-                navCtr.modalPresentationStyle = .fullScreen
-                self?.present(navCtr, animated: true, completion: nil)
+                self?.presentNextPage(ctr: CandyListViewController(),
+                                      title: selectItem)
                 break
             case MSYListViewController.kListTitle_p07:
                 self?.presentNextPage(ctr: PokedexGoListViewController(),
@@ -99,6 +89,9 @@ extension MSYListViewController {
                 break
             case MSYListViewController.kListTitle_p08:
                 self?.presentNextPage(ctr: NewsListViewController(),
+                                      title: selectItem)
+            case MSYListViewController.kListTitle_p09:
+                self?.presentNextPage(ctr: PhotoCollectionViewController(),
                                       title: selectItem)
             default:
                 break
