@@ -18,8 +18,9 @@ class MSYListViewController: MSYBaseViewController {
     static let kListTitle_p09 = "Project 09 - PhotoScroll"
     static let kListTitle_p10 = "Project 10 - Interests"
     
+    static let kListTitle_p19 = "Project 19 - Pinterest"
     static let kListTitle_p20 = "Project 20 - FlickrSearch"
-    static let kListTitle_p21 = "Project 21 - Browser"
+//    static let kListTitle_p21 = "Project 21 - Browser"
     
     
     override func viewDidLoad() {
@@ -48,8 +49,8 @@ extension MSYListViewController {
         ])
         
         let section3 = Section(headerTitle: "UICollectionView", items: [
+            MSYListViewController.kListTitle_p19,
             MSYListViewController.kListTitle_p20,
-            MSYListViewController.kListTitle_p21,
         ])
         
         let dataSource = DataSource(sections: [section1, section2, section3])
@@ -95,6 +96,9 @@ extension MSYListViewController {
                                       title: selectItem)
             case MSYListViewController.kListTitle_p10:
                 self?.presentNextPage(ctr: InterestsViewController(),
+                                      title: selectItem)
+            case MSYListViewController.kListTitle_p19:
+                self?.presentNextPage(ctr: PhotoStreamViewController(),
                                       title: selectItem)
             default:
                 break
