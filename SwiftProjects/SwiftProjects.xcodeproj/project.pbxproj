@@ -529,6 +529,19 @@
 			path = "08-SimpleRSSReader";
 			sourceTree = "<group>";
 		};
+		E04F0950278D1AB0008C5BB1 /* Example_tableView */ = {
+			isa = PBXGroup;
+			children = (
+				E039AA8B27871FC600E7E45D /* 08-SimpleRSSReader */,
+				E04F759B2786909400E8DE2C /* 07-PokedexGo */,
+				E0243C252785880500D40405 /* 06-CandySearch */,
+				E0063BC727844DE000E7FEBD /* 05-Artistry */,
+				E01E0B1F277EA1FC004E05B7 /* 04-TodoTDD */,
+				E0364646277D584C00C0AE32 /* 03-FacebookMe */,
+			);
+			path = Example_tableView;
+			sourceTree = "<group>";
+		};
 		E04F759B2786909400E8DE2C /* 07-PokedexGo */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,14 +610,9 @@
 			isa = PBXGroup;
 			children = (
 				E0364644277D454900C0AE32 /* MSYListViewController.swift */,
+				E04F0950278D1AB0008C5BB1 /* Example_tableView */,
 				7EAD2937278C60F0005FDD3E /* Example_collectionView */,
 				E00635E5278814F10017F7D3 /* Example_ScrollView */,
-				E039AA8B27871FC600E7E45D /* 08-SimpleRSSReader */,
-				E04F759B2786909400E8DE2C /* 07-PokedexGo */,
-				E0243C252785880500D40405 /* 06-CandySearch */,
-				E0063BC727844DE000E7FEBD /* 05-Artistry */,
-				E01E0B1F277EA1FC004E05B7 /* 04-TodoTDD */,
-				E0364646277D584C00C0AE32 /* 03-FacebookMe */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
