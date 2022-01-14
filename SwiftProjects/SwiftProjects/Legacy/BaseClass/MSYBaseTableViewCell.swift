@@ -22,7 +22,7 @@ class MSYBaseTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        self.contentView.backgroundColor = UIColor.msy_bgCellColor
+//        self.contentView.backgroundColor = UIColor.systemBackground
     }
     
     required init?(coder: NSCoder) {

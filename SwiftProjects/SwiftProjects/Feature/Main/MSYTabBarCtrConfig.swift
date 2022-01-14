@@ -26,13 +26,13 @@ class MSYTabBarCtrConfig: NSObject {
     }
     
     func viewCtrs() -> [UINavigationController] {
-        let discovery = MSYNavigationController(rootViewController: MSYKitFoundationViewController());
-        let podcast = MSYNavigationController(rootViewController: MSYListViewController());
-        let mine = MSYNavigationController(rootViewController: UIViewController());
+        let kitFoundationCtr = MSYNavigationController(rootViewController: MSYKitFoundationViewController());
+        let listCtr = MSYNavigationController(rootViewController: MSYListViewController());
+        let animationsListCtr = MSYNavigationController(rootViewController: MSYAnimationsListViewController());
         let follow = MSYNavigationController(rootViewController: UIViewController());
         let cloudVillage = MSYNavigationController(rootViewController: UIViewController());
         
-        let viewCtrs = [discovery, podcast, mine, follow, cloudVillage]
+        let viewCtrs = [kitFoundationCtr, listCtr, animationsListCtr, follow, cloudVillage]
         
         return viewCtrs
     }
