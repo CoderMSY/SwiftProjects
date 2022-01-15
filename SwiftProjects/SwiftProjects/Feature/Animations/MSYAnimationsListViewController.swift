@@ -53,7 +53,7 @@ extension MSYAnimationsListViewController {
                 self?.presentNextPage(ctr: AnimationsExampleViewController(),
                                       title: selectItem)
             case self?.kListTitle_p12:
-                self?.presentNextPage(ctr: TDItemListViewController(),
+                self?.presentNextPage(ctr: TumblrMainViewController(),
                                       title: selectItem)
             case self?.kListTitle_p13:
                 self?.presentNextPage(ctr: ArtistListViewController(),

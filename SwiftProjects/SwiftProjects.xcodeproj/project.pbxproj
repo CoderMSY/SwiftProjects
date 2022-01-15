@@ -11,6 +11,9 @@
 		7E9243EA2791B1D700D4439E /* AnimationsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */; };
 		7E9243EC2791BA6000D4439E /* AnimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */; };
 		7E9243EE2791BBDE00D4439E /* AnimationCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243ED2791BBDE00D4439E /* AnimationCommon.swift */; };
+		7E9243F12791D1D500D4439E /* TumblrMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243F02791D1D500D4439E /* TumblrMainViewController.swift */; };
+		7E9243F32791DB4D00D4439E /* TumblrMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243F22791DB4D00D4439E /* TumblrMenuViewController.swift */; };
+		7E9243F52791DB5F00D4439E /* TumblrMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243F42791DB5F00D4439E /* TumblrMenuItemView.swift */; };
 		7EAD293F278C61FA005FDD3E /* PhotoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD293E278C61FA005FDD3E /* PhotoStreamViewController.swift */; };
 		7EAD2941278C64F4005FDD3E /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD2940278C64F4005FDD3E /* PhotoItem.swift */; };
 		7EAD2943278C6546005FDD3E /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EAD2942278C6546005FDD3E /* Photos.plist */; };
@@ -18,6 +21,7 @@
 		7EAD2947278C6962005FDD3E /* AnnotatedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD2946278C6962005FDD3E /* AnnotatedPhotoCell.swift */; };
 		7EAD2949278C69C0005FDD3E /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD2948278C69C0005FDD3E /* RoundedCornersView.swift */; };
 		7EAD294C278C6EC9005FDD3E /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAD294B278C6EC9005FDD3E /* PinterestLayout.swift */; };
+		7EB6A11527930F7B00B50AAD /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB6A11427930F7B00B50AAD /* TransitionManager.swift */; };
 		A4F37F87084D5408F4F72E26 /* Pods_SwiftProjects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413442FB6586B0E95965910F /* Pods_SwiftProjects.framework */; };
 		E00635E9278818730017F7D3 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635E8278818730017F7D3 /* PhotoCollectionViewController.swift */; };
 		E00635EB2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00635EA2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift */; };
@@ -101,6 +105,9 @@
 		7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewController.swift; sourceTree = "<group>"; };
 		7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailViewController.swift; sourceTree = "<group>"; };
 		7E9243ED2791BBDE00D4439E /* AnimationCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCommon.swift; sourceTree = "<group>"; };
+		7E9243F02791D1D500D4439E /* TumblrMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrMainViewController.swift; sourceTree = "<group>"; };
+		7E9243F22791DB4D00D4439E /* TumblrMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrMenuViewController.swift; sourceTree = "<group>"; };
+		7E9243F42791DB5F00D4439E /* TumblrMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrMenuItemView.swift; sourceTree = "<group>"; };
 		7EAD293E278C61FA005FDD3E /* PhotoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamViewController.swift; sourceTree = "<group>"; };
 		7EAD2940278C64F4005FDD3E /* PhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		7EAD2942278C6546005FDD3E /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
@@ -108,6 +115,7 @@
 		7EAD2946278C6962005FDD3E /* AnnotatedPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedPhotoCell.swift; sourceTree = "<group>"; };
 		7EAD2948278C69C0005FDD3E /* RoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		7EAD294B278C6EC9005FDD3E /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		7EB6A11427930F7B00B50AAD /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		8AFA3D98B2232C3B120FDD56 /* Pods-SwiftProjects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjects.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProjects/Pods-SwiftProjects.debug.xcconfig"; sourceTree = "<group>"; };
 		E00635E8278818730017F7D3 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		E00635EA2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -219,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */,
+				7E9243EF2791D1A900D4439E /* 12-Tumblr */,
 				7E9243E82791B1A000D4439E /* 11-Animations */,
 			);
 			path = Animations;
@@ -232,6 +241,17 @@
 				7E9243ED2791BBDE00D4439E /* AnimationCommon.swift */,
 			);
 			path = "11-Animations";
+			sourceTree = "<group>";
+		};
+		7E9243EF2791D1A900D4439E /* 12-Tumblr */ = {
+			isa = PBXGroup;
+			children = (
+				7E9243F02791D1D500D4439E /* TumblrMainViewController.swift */,
+				7E9243F22791DB4D00D4439E /* TumblrMenuViewController.swift */,
+				7E9243F42791DB5F00D4439E /* TumblrMenuItemView.swift */,
+				7EB6A11427930F7B00B50AAD /* TransitionManager.swift */,
+			);
+			path = "12-Tumblr";
 			sourceTree = "<group>";
 		};
 		7EAD2937278C60F0005FDD3E /* Example_collectionView */ = {
@@ -895,6 +915,7 @@
 				E00635FA27883D440017F7D3 /* ZoomedPhotoViewController.swift in Sources */,
 				7EAD2949278C69C0005FDD3E /* RoundedCornersView.swift in Sources */,
 				E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */,
+				7EB6A11527930F7B00B50AAD /* TransitionManager.swift in Sources */,
 				E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */,
 				7EAD2945278C659F005FDD3E /* UIImage+Decompression.swift in Sources */,
 				E0D33A9E277C34CA002ECAF1 /* ContactViewController.swift in Sources */,
@@ -935,12 +956,14 @@
 				E0063BD5278453C900E7FEBD /* Work.swift in Sources */,
 				E0063BCD27844E3B00E7FEBD /* ArtistListViewController.swift in Sources */,
 				7EAD293F278C61FA005FDD3E /* PhotoStreamViewController.swift in Sources */,
+				7E9243F32791DB4D00D4439E /* TumblrMenuViewController.swift in Sources */,
 				E0063BC6278436B900E7FEBD /* UIView+MSYExtension.swift in Sources */,
 				E05FD387278C340900FFEFCB /* Interest.swift in Sources */,
 				E00635F4278821A40017F7D3 /* PhotoCommentViewController.swift in Sources */,
 				E0063BC42784334200E7FEBD /* TDDetailViewController.swift in Sources */,
 				E039AA8E2787240A00E7E45D /* NewsListViewController.swift in Sources */,
 				7E9243EC2791BA6000D4439E /* AnimationDetailViewController.swift in Sources */,
+				7E9243F52791DB5F00D4439E /* TumblrMenuItemView.swift in Sources */,
 				7E9243EE2791BBDE00D4439E /* AnimationCommon.swift in Sources */,
 				E036464B277D84FB00C0AE32 /* FBMeViewController.swift in Sources */,
 				E0243C2B2785888C00D40405 /* Candy.swift in Sources */,
@@ -949,6 +972,7 @@
 				7EAD294C278C6EC9005FDD3E /* PinterestLayout.swift in Sources */,
 				E00635F727882CD90017F7D3 /* PhotoPageViewController.swift in Sources */,
 				E0872EA627848E4200C6B2DF /* ArtistDetailViewController.swift in Sources */,
+				7E9243F12791D1D500D4439E /* TumblrMainViewController.swift in Sources */,
 				E0D33A96277C1453002ECAF1 /* MSYKitFoundationViewController.swift in Sources */,
 				7EAD2941278C64F4005FDD3E /* PhotoItem.swift in Sources */,
 				E0D33A93277C12A1002ECAF1 /* ATShareMacro.swift in Sources */,
