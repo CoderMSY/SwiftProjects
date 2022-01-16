@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E7021F12793E65500AE09EC /* TwitterBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021F02793E65500AE09EC /* TwitterBirdViewController.swift */; };
+		7E7021F42793F1B500AE09EC /* QuoraDotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021F32793F1B500AE09EC /* QuoraDotsViewController.swift */; };
 		7E9243E72791AE0600D4439E /* MSYAnimationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */; };
 		7E9243EA2791B1D700D4439E /* AnimationsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */; };
 		7E9243EC2791BA6000D4439E /* AnimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */; };
@@ -103,6 +104,7 @@
 		413442FB6586B0E95965910F /* Pods_SwiftProjects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B39F81A3B319EC57AF0E507 /* Pods-SwiftProjects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjects.release.xcconfig"; path = "Target Support Files/Pods-SwiftProjects/Pods-SwiftProjects.release.xcconfig"; sourceTree = "<group>"; };
 		7E7021F02793E65500AE09EC /* TwitterBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterBirdViewController.swift; sourceTree = "<group>"; };
+		7E7021F32793F1B500AE09EC /* QuoraDotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoraDotsViewController.swift; sourceTree = "<group>"; };
 		7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYAnimationsListViewController.swift; sourceTree = "<group>"; };
 		7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewController.swift; sourceTree = "<group>"; };
 		7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailViewController.swift; sourceTree = "<group>"; };
@@ -233,10 +235,19 @@
 			path = "13-TwitterBird";
 			sourceTree = "<group>";
 		};
+		7E7021F22793EC8400AE09EC /* 14-QuoraDots */ = {
+			isa = PBXGroup;
+			children = (
+				7E7021F32793F1B500AE09EC /* QuoraDotsViewController.swift */,
+			);
+			path = "14-QuoraDots";
+			sourceTree = "<group>";
+		};
 		7E9243E52791ADD300D4439E /* Animations */ = {
 			isa = PBXGroup;
 			children = (
 				7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */,
+				7E7021F22793EC8400AE09EC /* 14-QuoraDots */,
 				7E7021EF2793E63700AE09EC /* 13-TwitterBird */,
 				7E9243EF2791D1A900D4439E /* 12-Tumblr */,
 				7E9243E82791B1A000D4439E /* 11-Animations */,
@@ -946,6 +957,7 @@
 				E0063BCF27844EE300E7FEBD /* ArtistCell.swift in Sources */,
 				E00635EE278819F50017F7D3 /* PhotoCollectionCell.swift in Sources */,
 				E04F75A42786DD5900E8DE2C /* PokedexGoListCell.swift in Sources */,
+				7E7021F42793F1B500AE09EC /* QuoraDotsViewController.swift in Sources */,
 				7EAD2947278C6962005FDD3E /* AnnotatedPhotoCell.swift in Sources */,
 				E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */,
 				E01E0B21277EA268004E05B7 /* TDItemListViewController.swift in Sources */,

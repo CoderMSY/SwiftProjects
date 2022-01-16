@@ -59,7 +59,7 @@ extension MSYAnimationsListViewController {
                 self?.presentNextPage(ctr: TwitterBirdViewController(),
                                       title: nil)
             case self?.kListTitle_p14:
-                self?.presentNextPage(ctr: CandyListViewController(),
+                self?.presentNextPage(ctr: QuoraDotsViewController(),
                                       title: selectItem)
             case self?.kListTitle_p15:
                 self?.presentNextPage(ctr: PokedexGoListViewController(),
