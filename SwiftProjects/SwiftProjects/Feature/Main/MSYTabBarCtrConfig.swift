@@ -29,10 +29,11 @@ class MSYTabBarCtrConfig: NSObject {
         let kitFoundationCtr = MSYNavigationController(rootViewController: MSYKitFoundationViewController());
         let listCtr = MSYNavigationController(rootViewController: MSYListViewController());
         let animationsListCtr = MSYNavigationController(rootViewController: MSYAnimationsListViewController());
-        let follow = MSYNavigationController(rootViewController: UIViewController());
-        let cloudVillage = MSYNavigationController(rootViewController: UIViewController());
+        let designPatternCtr = MSYNavigationController(rootViewController: DesignPatternListViewController());
+        let libraryAndKitCtr = MSYNavigationController(rootViewController: LibraryAndKitListViewController());
+        let cloudVillage1 = MSYNavigationController(rootViewController: UIViewController());
         
-        let viewCtrs = [kitFoundationCtr, listCtr, animationsListCtr, follow, cloudVillage]
+        let viewCtrs = [kitFoundationCtr, listCtr, animationsListCtr, designPatternCtr, libraryAndKitCtr, cloudVillage1]
         
         return viewCtrs
     }
@@ -54,22 +55,23 @@ class MSYTabBarCtrConfig: NSObject {
             CYLTabBarItemSelectedImage: "tb_animation_selected"
         ]
         let itemFour = [
-            CYLTabBarItemTitle: "library",
-            CYLTabBarItemImage: "tb_library",
-            CYLTabBarItemSelectedImage: "tb_library_selected"
-        ]
-//        let itemFive = [
-//            CYLTabBarItemTitle: "open source",
-//            CYLTabBarItemImage: "tb_openSource",
-//            CYLTabBarItemSelectedImage: "tb_openSource_selected"
-//        ]
-        let itemFive = [
             CYLTabBarItemTitle: "design pattern",
             CYLTabBarItemImage: "tb_designPattern",
             CYLTabBarItemSelectedImage: "tb_designPattern_selected"
         ]
+        let itemFive = [
+            CYLTabBarItemTitle: "library&Kit",
+            CYLTabBarItemImage: "tb_library",
+            CYLTabBarItemSelectedImage: "tb_library_selected"
+        ]
+        let itemSix = [
+            CYLTabBarItemTitle: "open source",
+            CYLTabBarItemImage: "tb_openSource",
+            CYLTabBarItemSelectedImage: "tb_openSource_selected"
+        ]
         
-        let itemsAtt = [itemOne, itemTwo, itemThree, itemFour, itemFive]
+        
+        let itemsAtt = [itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix]
         
         return itemsAtt
     }

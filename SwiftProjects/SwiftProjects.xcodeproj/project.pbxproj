@@ -19,6 +19,9 @@
 		7E74262427944B55002405D4 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262327944B55002405D4 /* VideoSplashViewController.swift */; };
 		7E74262627944DC2002405D4 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262527944DC2002405D4 /* VideoCutter.swift */; };
 		7E74262827944F1D002405D4 /* UIViewController+MSYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262727944F1D002405D4 /* UIViewController+MSYExtension.swift */; };
+		7E74262B279460FA002405D4 /* DesignPatternListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262A279460FA002405D4 /* DesignPatternListViewController.swift */; };
+		7E74262E27946AF3002405D4 /* LibraryAndKitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262D27946AF3002405D4 /* LibraryAndKitListViewController.swift */; };
+		7E74263127946BB1002405D4 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74263027946BB1002405D4 /* BrowserViewController.swift */; };
 		7E9243E72791AE0600D4439E /* MSYAnimationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */; };
 		7E9243EA2791B1D700D4439E /* AnimationsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */; };
 		7E9243EC2791BA6000D4439E /* AnimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */; };
@@ -125,6 +128,9 @@
 		7E74262327944B55002405D4 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
 		7E74262527944DC2002405D4 /* VideoCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
 		7E74262727944F1D002405D4 /* UIViewController+MSYExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MSYExtension.swift"; sourceTree = "<group>"; };
+		7E74262A279460FA002405D4 /* DesignPatternListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternListViewController.swift; sourceTree = "<group>"; };
+		7E74262D27946AF3002405D4 /* LibraryAndKitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAndKitListViewController.swift; sourceTree = "<group>"; };
+		7E74263027946BB1002405D4 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYAnimationsListViewController.swift; sourceTree = "<group>"; };
 		7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewController.swift; sourceTree = "<group>"; };
 		7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +314,31 @@
 				7E7022042794147800AE09EC /* SpotifyMasterViewController.swift */,
 			);
 			path = SpotifyMaster;
+			sourceTree = "<group>";
+		};
+		7E742629279460CC002405D4 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				7E74262A279460FA002405D4 /* DesignPatternListViewController.swift */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		7E74262C27946ACC002405D4 /* Library & Kit */ = {
+			isa = PBXGroup;
+			children = (
+				7E74262D27946AF3002405D4 /* LibraryAndKitListViewController.swift */,
+				7E74262F27946B95002405D4 /* 21-Browser */,
+			);
+			path = "Library & Kit";
+			sourceTree = "<group>";
+		};
+		7E74262F27946B95002405D4 /* 21-Browser */ = {
+			isa = PBXGroup;
+			children = (
+				7E74263027946BB1002405D4 /* BrowserViewController.swift */,
+			);
+			path = "21-Browser";
 			sourceTree = "<group>";
 		};
 		7E9243E52791ADD300D4439E /* Animations */ = {
@@ -851,6 +882,8 @@
 		E0F38160277B1C49002CF7B3 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				7E74262C27946ACC002405D4 /* Library & Kit */,
+				7E742629279460CC002405D4 /* DesignPattern */,
 				7E9243E52791ADD300D4439E /* Animations */,
 				E0D33A85277BFFE5002ECAF1 /* ListView */,
 				E0F38164277B1FE0002CF7B3 /* UIKit&Foundation */,
@@ -1021,6 +1054,7 @@
 				E0D33A8F277C12A1002ECAF1 /* PluginTableView.swift in Sources */,
 				E0F3814D277B1B09002CF7B3 /* AppDelegate.swift in Sources */,
 				E0D33A91277C12A1002ECAF1 /* Section.swift in Sources */,
+				7E74262B279460FA002405D4 /* DesignPatternListViewController.swift in Sources */,
 				E0063BC0278415C000E7FEBD /* TDAddItemViewController.swift in Sources */,
 				E0D33AA9277C6CCC002ECAF1 /* StopwatchViewController.swift in Sources */,
 				E0D49A582783F52F007815BA /* TDConstants.swift in Sources */,
@@ -1037,6 +1071,7 @@
 				E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */,
 				7E7021F92794033200AE09EC /* SnapChatViewController.swift in Sources */,
 				E01E0B21277EA268004E05B7 /* TDItemListViewController.swift in Sources */,
+				7E74262E27946AF3002405D4 /* LibraryAndKitListViewController.swift in Sources */,
 				E01E0B23277EA2E4004E05B7 /* TDItemListDataProvider.swift in Sources */,
 				E0D33A92277C12A1002ECAF1 /* DataSource.swift in Sources */,
 				E00635F027881E7F0017F7D3 /* UIImage+PhotoCollection.swift in Sources */,
@@ -1083,6 +1118,7 @@
 				E04F75AA2786E3AC00E8DE2C /* LibraryAPI.swift in Sources */,
 				7E7021F12793E65500AE09EC /* TwitterBirdViewController.swift in Sources */,
 				E00635E9278818730017F7D3 /* PhotoCollectionViewController.swift in Sources */,
+				7E74263127946BB1002405D4 /* BrowserViewController.swift in Sources */,
 				E0364645277D454900C0AE32 /* MSYListViewController.swift in Sources */,
 				E036465D277D929C00C0AE32 /* FBMeUser.swift in Sources */,
 				E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */,
