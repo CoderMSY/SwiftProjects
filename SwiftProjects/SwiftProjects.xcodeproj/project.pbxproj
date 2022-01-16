@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		7E7021F12793E65500AE09EC /* TwitterBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021F02793E65500AE09EC /* TwitterBirdViewController.swift */; };
 		7E7021F42793F1B500AE09EC /* QuoraDotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021F32793F1B500AE09EC /* QuoraDotsViewController.swift */; };
+		7E7021F72794007700AE09EC /* SnapMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021F62794007700AE09EC /* SnapMainViewController.swift */; };
+		7E7021F92794033200AE09EC /* SnapChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021F82794033200AE09EC /* SnapChatViewController.swift */; };
+		7E7021FB2794034800AE09EC /* SnapStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021FA2794034800AE09EC /* SnapStoriesViewController.swift */; };
+		7E7021FD2794035500AE09EC /* SnapDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021FC2794035500AE09EC /* SnapDiscoverViewController.swift */; };
+		7E7021FF2794037E00AE09EC /* SnapCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021FE2794037E00AE09EC /* SnapCommon.swift */; };
 		7E9243E72791AE0600D4439E /* MSYAnimationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */; };
 		7E9243EA2791B1D700D4439E /* AnimationsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */; };
 		7E9243EC2791BA6000D4439E /* AnimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */; };
@@ -105,6 +110,11 @@
 		4B39F81A3B319EC57AF0E507 /* Pods-SwiftProjects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjects.release.xcconfig"; path = "Target Support Files/Pods-SwiftProjects/Pods-SwiftProjects.release.xcconfig"; sourceTree = "<group>"; };
 		7E7021F02793E65500AE09EC /* TwitterBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterBirdViewController.swift; sourceTree = "<group>"; };
 		7E7021F32793F1B500AE09EC /* QuoraDotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoraDotsViewController.swift; sourceTree = "<group>"; };
+		7E7021F62794007700AE09EC /* SnapMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapMainViewController.swift; sourceTree = "<group>"; };
+		7E7021F82794033200AE09EC /* SnapChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatViewController.swift; sourceTree = "<group>"; };
+		7E7021FA2794034800AE09EC /* SnapStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapStoriesViewController.swift; sourceTree = "<group>"; };
+		7E7021FC2794035500AE09EC /* SnapDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapDiscoverViewController.swift; sourceTree = "<group>"; };
+		7E7021FE2794037E00AE09EC /* SnapCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCommon.swift; sourceTree = "<group>"; };
 		7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYAnimationsListViewController.swift; sourceTree = "<group>"; };
 		7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewController.swift; sourceTree = "<group>"; };
 		7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailViewController.swift; sourceTree = "<group>"; };
@@ -243,10 +253,23 @@
 			path = "14-QuoraDots";
 			sourceTree = "<group>";
 		};
+		7E7021F52794001C00AE09EC /* 15-SnapchatMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7E7021F62794007700AE09EC /* SnapMainViewController.swift */,
+				7E7021F82794033200AE09EC /* SnapChatViewController.swift */,
+				7E7021FA2794034800AE09EC /* SnapStoriesViewController.swift */,
+				7E7021FC2794035500AE09EC /* SnapDiscoverViewController.swift */,
+				7E7021FE2794037E00AE09EC /* SnapCommon.swift */,
+			);
+			path = "15-SnapchatMenu";
+			sourceTree = "<group>";
+		};
 		7E9243E52791ADD300D4439E /* Animations */ = {
 			isa = PBXGroup;
 			children = (
 				7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */,
+				7E7021F52794001C00AE09EC /* 15-SnapchatMenu */,
 				7E7021F22793EC8400AE09EC /* 14-QuoraDots */,
 				7E7021EF2793E63700AE09EC /* 13-TwitterBird */,
 				7E9243EF2791D1A900D4439E /* 12-Tumblr */,
@@ -936,6 +959,8 @@
 				E01E0B28277EA378004E05B7 /* TDItemManager.swift in Sources */,
 				E00635FA27883D440017F7D3 /* ZoomedPhotoViewController.swift in Sources */,
 				7EAD2949278C69C0005FDD3E /* RoundedCornersView.swift in Sources */,
+				7E7021FD2794035500AE09EC /* SnapDiscoverViewController.swift in Sources */,
+				7E7021FB2794034800AE09EC /* SnapStoriesViewController.swift in Sources */,
 				E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */,
 				7EB6A11527930F7B00B50AAD /* TransitionManager.swift in Sources */,
 				E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */,
@@ -960,6 +985,7 @@
 				7E7021F42793F1B500AE09EC /* QuoraDotsViewController.swift in Sources */,
 				7EAD2947278C6962005FDD3E /* AnnotatedPhotoCell.swift in Sources */,
 				E04F75A22786A30900E8DE2C /* PokedexGoListViewController.swift in Sources */,
+				7E7021F92794033200AE09EC /* SnapChatViewController.swift in Sources */,
 				E01E0B21277EA268004E05B7 /* TDItemListViewController.swift in Sources */,
 				E01E0B23277EA2E4004E05B7 /* TDItemListDataProvider.swift in Sources */,
 				E0D33A92277C12A1002ECAF1 /* DataSource.swift in Sources */,
@@ -967,6 +993,7 @@
 				E05505FD27859A5700A8E175 /* CandyDetailViewController.swift in Sources */,
 				E0364650277D881400C0AE32 /* UIColor+FBExtension.swift in Sources */,
 				E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */,
+				7E7021F72794007700AE09EC /* SnapMainViewController.swift in Sources */,
 				7E9243E72791AE0600D4439E /* MSYAnimationsListViewController.swift in Sources */,
 				7E9243EA2791B1D700D4439E /* AnimationsExampleViewController.swift in Sources */,
 				E00635EB2788198C0017F7D3 /* MSYBaseCollectionViewCell.swift in Sources */,
@@ -976,6 +1003,7 @@
 				E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */,
 				E0F38163277B1C67002CF7B3 /* MSYTabBarCtrConfig.swift in Sources */,
 				E0243C292785885800D40405 /* CandyListViewController.swift in Sources */,
+				7E7021FF2794037E00AE09EC /* SnapCommon.swift in Sources */,
 				E0063BD5278453C900E7FEBD /* Work.swift in Sources */,
 				E0063BCD27844E3B00E7FEBD /* ArtistListViewController.swift in Sources */,
 				7EAD293F278C61FA005FDD3E /* PhotoStreamViewController.swift in Sources */,

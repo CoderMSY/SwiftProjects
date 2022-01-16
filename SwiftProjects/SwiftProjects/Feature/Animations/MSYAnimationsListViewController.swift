@@ -62,7 +62,7 @@ extension MSYAnimationsListViewController {
                 self?.presentNextPage(ctr: QuoraDotsViewController(),
                                       title: selectItem)
             case self?.kListTitle_p15:
-                self?.presentNextPage(ctr: PokedexGoListViewController(),
+                self?.presentNextPage(ctr: SnapMainViewController(),
                                       title: selectItem)
             case self?.kListTitle_p16:
                 self?.presentNextPage(ctr: NewsListViewController(),
