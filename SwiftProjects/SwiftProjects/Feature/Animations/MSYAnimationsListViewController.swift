@@ -56,8 +56,8 @@ extension MSYAnimationsListViewController {
                 self?.presentNextPage(ctr: TumblrMainViewController(),
                                       title: selectItem)
             case self?.kListTitle_p13:
-                self?.presentNextPage(ctr: ArtistListViewController(),
-                                      title: selectItem)
+                self?.presentNextPage(ctr: TwitterBirdViewController(),
+                                      title: nil)
             case self?.kListTitle_p14:
                 self?.presentNextPage(ctr: CandyListViewController(),
                                       title: selectItem)
