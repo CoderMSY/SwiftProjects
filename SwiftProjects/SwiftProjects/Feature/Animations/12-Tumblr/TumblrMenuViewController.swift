@@ -14,7 +14,7 @@ class TumblrMenuViewController: MSYBaseViewController {
         var dismissBtn = UIButton(type: .custom)
         dismissBtn.setTitle("dismiss", for: .normal)
         dismissBtn.setTitleColor(.white, for: .normal)
-        dismissBtn.addTarget(self, action: #selector(closePage(_:)), for: .touchUpInside)
+        dismissBtn.addTarget(self, action: #selector(dismissBtnClicked(_:)), for: .touchUpInside)
         
         return dismissBtn
     }()
@@ -90,7 +90,7 @@ class TumblrMenuViewController: MSYBaseViewController {
         }
     }
 
-    @objc private func closePage(_ sender: UIButton) {
+    @objc private func dismissBtnClicked(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
 }

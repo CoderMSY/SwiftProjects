@@ -14,7 +14,6 @@ class MSYAnimationsListViewController: MSYBaseViewController {
     private let kListTitle_p14 = "Project 14 - QuoraDots"
     private let kListTitle_p15 = "Project 15 - SnapchatMenu"
     private let kListTitle_p16 = "Project 16 - SpotifySignIn"
-    private let kListTitle_p17 = "Project 16 - SpotifySignIn"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +64,7 @@ extension MSYAnimationsListViewController {
                 self?.presentNextPage(ctr: SnapMainViewController(),
                                       title: selectItem)
             case self?.kListTitle_p16:
-                self?.presentNextPage(ctr: NewsListViewController(),
+                self?.presentNextPage(ctr: SpotifyMasterViewController(),
                                       title: selectItem)
             default:
                 break

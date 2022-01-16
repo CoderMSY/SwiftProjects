@@ -59,8 +59,23 @@ extension SnapMainViewController {
     }
     
     fileprivate func add(childViewController: UIViewController, toParentViewController parentViewController: UIViewController) {
+        //添加一个 childViewController
+        //添加到父控制器中
         addChild(childViewController)
+        //把子控制器的 view 添加到父控制器的 view 上面
         scrollView.addSubview(childViewController.view)
+        //子控制器被通知有了一个父控制器
         childViewController.didMove(toParent: parentViewController)
     }
+    //移除一个 childViewController
+    /*
+    fileprivate func removeChildViewController(childViewController: UIViewController) {
+        //子控制器被通知即将解除父子关系
+        childViewController.willMove(toParent: self)
+        //把子控制器的 view 从到父控制器的 view 上面移除
+        childViewController.view.removeFromSuperview()
+        //真正的解除关系,内部会调用childViewController.didMove(toParent: nil)
+        childViewController.removeFromParent()
+    }
+     */
 }

@@ -14,6 +14,11 @@
 		7E7021FB2794034800AE09EC /* SnapStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021FA2794034800AE09EC /* SnapStoriesViewController.swift */; };
 		7E7021FD2794035500AE09EC /* SnapDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021FC2794035500AE09EC /* SnapDiscoverViewController.swift */; };
 		7E7021FF2794037E00AE09EC /* SnapCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7021FE2794037E00AE09EC /* SnapCommon.swift */; };
+		7E7022052794147800AE09EC /* SpotifyMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7022042794147800AE09EC /* SpotifyMasterViewController.swift */; };
+		7E7022072794149400AE09EC /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7E7022062794149400AE09EC /* moments.mp4 */; };
+		7E74262427944B55002405D4 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262327944B55002405D4 /* VideoSplashViewController.swift */; };
+		7E74262627944DC2002405D4 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262527944DC2002405D4 /* VideoCutter.swift */; };
+		7E74262827944F1D002405D4 /* UIViewController+MSYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E74262727944F1D002405D4 /* UIViewController+MSYExtension.swift */; };
 		7E9243E72791AE0600D4439E /* MSYAnimationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */; };
 		7E9243EA2791B1D700D4439E /* AnimationsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */; };
 		7E9243EC2791BA6000D4439E /* AnimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */; };
@@ -115,6 +120,11 @@
 		7E7021FA2794034800AE09EC /* SnapStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapStoriesViewController.swift; sourceTree = "<group>"; };
 		7E7021FC2794035500AE09EC /* SnapDiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapDiscoverViewController.swift; sourceTree = "<group>"; };
 		7E7021FE2794037E00AE09EC /* SnapCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCommon.swift; sourceTree = "<group>"; };
+		7E7022042794147800AE09EC /* SpotifyMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMasterViewController.swift; sourceTree = "<group>"; };
+		7E7022062794149400AE09EC /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		7E74262327944B55002405D4 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+		7E74262527944DC2002405D4 /* VideoCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		7E74262727944F1D002405D4 /* UIViewController+MSYExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+MSYExtension.swift"; sourceTree = "<group>"; };
 		7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYAnimationsListViewController.swift; sourceTree = "<group>"; };
 		7E9243E92791B1D700D4439E /* AnimationsExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewController.swift; sourceTree = "<group>"; };
 		7E9243EB2791BA6000D4439E /* AnimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailViewController.swift; sourceTree = "<group>"; };
@@ -265,10 +275,46 @@
 			path = "15-SnapchatMenu";
 			sourceTree = "<group>";
 		};
+		7E702200279412FA00AE09EC /* 16-SpotifySignIn */ = {
+			isa = PBXGroup;
+			children = (
+				7E7022032794145C00AE09EC /* SpotifyMaster */,
+				7E7022022794145100AE09EC /* Library */,
+				7E7022012794144A00AE09EC /* Files */,
+			);
+			path = "16-SpotifySignIn";
+			sourceTree = "<group>";
+		};
+		7E7022012794144A00AE09EC /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E7022062794149400AE09EC /* moments.mp4 */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		7E7022022794145100AE09EC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7E74262327944B55002405D4 /* VideoSplashViewController.swift */,
+				7E74262527944DC2002405D4 /* VideoCutter.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		7E7022032794145C00AE09EC /* SpotifyMaster */ = {
+			isa = PBXGroup;
+			children = (
+				7E7022042794147800AE09EC /* SpotifyMasterViewController.swift */,
+			);
+			path = SpotifyMaster;
+			sourceTree = "<group>";
+		};
 		7E9243E52791ADD300D4439E /* Animations */ = {
 			isa = PBXGroup;
 			children = (
 				7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */,
+				7E702200279412FA00AE09EC /* 16-SpotifySignIn */,
 				7E7021F52794001C00AE09EC /* 15-SnapchatMenu */,
 				7E7021F22793EC8400AE09EC /* 14-QuoraDots */,
 				7E7021EF2793E63700AE09EC /* 13-TwitterBird */,
@@ -607,6 +653,7 @@
 				E0063BC127842B1800E7FEBD /* UIApplication+MSYExtension.swift */,
 				E0063BC5278436B900E7FEBD /* UIView+MSYExtension.swift */,
 				E0243C232785767900D40405 /* UIImage+MSYExtension.swift */,
+				7E74262727944F1D002405D4 /* UIViewController+MSYExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -893,6 +940,7 @@
 				E0F38159277B1B0A002CF7B3 /* LaunchScreen.storyboard in Resources */,
 				E0F38156277B1B0A002CF7B3 /* Assets.xcassets in Resources */,
 				E0063BD3278453BE00E7FEBD /* artists.json in Resources */,
+				7E7022072794149400AE09EC /* moments.mp4 in Resources */,
 				E0F38154277B1B09002CF7B3 /* Main.storyboard in Resources */,
 				7EAD2943278C6546005FDD3E /* Photos.plist in Resources */,
 			);
@@ -961,7 +1009,9 @@
 				7EAD2949278C69C0005FDD3E /* RoundedCornersView.swift in Sources */,
 				7E7021FD2794035500AE09EC /* SnapDiscoverViewController.swift in Sources */,
 				7E7021FB2794034800AE09EC /* SnapStoriesViewController.swift in Sources */,
+				7E74262827944F1D002405D4 /* UIViewController+MSYExtension.swift in Sources */,
 				E04F75A62786E23D00E8DE2C /* Pokemon.swift in Sources */,
+				7E74262627944DC2002405D4 /* VideoCutter.swift in Sources */,
 				7EB6A11527930F7B00B50AAD /* TransitionManager.swift in Sources */,
 				E04F75AC2786EF8B00E8DE2C /* PersistencyManager.swift in Sources */,
 				7EAD2945278C659F005FDD3E /* UIImage+Decompression.swift in Sources */,
@@ -1018,6 +1068,7 @@
 				7E9243EE2791BBDE00D4439E /* AnimationCommon.swift in Sources */,
 				E036464B277D84FB00C0AE32 /* FBMeViewController.swift in Sources */,
 				E0243C2B2785888C00D40405 /* Candy.swift in Sources */,
+				7E74262427944B55002405D4 /* VideoSplashViewController.swift in Sources */,
 				E0364655277D8D2E00C0AE32 /* MSYBaseTableViewCell.swift in Sources */,
 				E0D33A94277C12A1002ECAF1 /* MSYBaseViewController.swift in Sources */,
 				7EAD294C278C6EC9005FDD3E /* PinterestLayout.swift in Sources */,
@@ -1037,6 +1088,7 @@
 				E04F75AE2786F5C600E8DE2C /* PokedexGoDetailViewController.swift in Sources */,
 				E0D33A9A277C32EF002ECAF1 /* GoodAsOldPhonesTabBarCtr.swift in Sources */,
 				E05FD383278C318F00FFEFCB /* InterestsViewController.swift in Sources */,
+				7E7022052794147800AE09EC /* SpotifyMasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
