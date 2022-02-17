@@ -87,6 +87,8 @@
 		E05FD387278C340900FFEFCB /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05FD386278C340900FFEFCB /* Interest.swift */; };
 		E0872EA627848E4200C6B2DF /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0872EA527848E4200C6B2DF /* ArtistDetailViewController.swift */; };
 		E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0872EA727848F8400C6B2DF /* WorkCell.swift */; };
+		E09B42A627BE373700D54867 /* MSY3DEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B42A527BE373700D54867 /* MSY3DEffectsViewController.swift */; };
+		E09B42A827BE37AC00D54867 /* MSY3DEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B42A727BE37AC00D54867 /* MSY3DEffectsView.swift */; };
 		E0D33A8F277C12A1002ECAF1 /* PluginTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D33A88277C12A1002ECAF1 /* PluginTableView.swift */; };
 		E0D33A90277C12A1002ECAF1 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D33A89277C12A1002ECAF1 /* Configurator.swift */; };
 		E0D33A91277C12A1002ECAF1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D33A8A277C12A1002ECAF1 /* Section.swift */; };
@@ -104,6 +106,7 @@
 		E0D33AAB277C6D28002ECAF1 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D33AAA277C6D28002ECAF1 /* Stopwatch.swift */; };
 		E0D49A582783F52F007815BA /* TDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D49A572783F52F007815BA /* TDConstants.swift */; };
 		E0D49A5A2783F610007815BA /* TDItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D49A592783F610007815BA /* TDItemCell.swift */; };
+		E0EDBE5F27AE4DAF00988CF5 /* MSYClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDBE5E27AE4DAF00988CF5 /* MSYClosureViewController.swift */; };
 		E0F3814D277B1B09002CF7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F3814C277B1B09002CF7B3 /* AppDelegate.swift */; };
 		E0F3814F277B1B09002CF7B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F3814E277B1B09002CF7B3 /* SceneDelegate.swift */; };
 		E0F38151277B1B09002CF7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F38150277B1B09002CF7B3 /* ViewController.swift */; };
@@ -196,6 +199,8 @@
 		E05FD386278C340900FFEFCB /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		E0872EA527848E4200C6B2DF /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		E0872EA727848F8400C6B2DF /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
+		E09B42A527BE373700D54867 /* MSY3DEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSY3DEffectsViewController.swift; sourceTree = "<group>"; };
+		E09B42A727BE37AC00D54867 /* MSY3DEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSY3DEffectsView.swift; sourceTree = "<group>"; };
 		E0D33A88277C12A1002ECAF1 /* PluginTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginTableView.swift; sourceTree = "<group>"; };
 		E0D33A89277C12A1002ECAF1 /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		E0D33A8A277C12A1002ECAF1 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 		E0D33AAA277C6D28002ECAF1 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		E0D49A572783F52F007815BA /* TDConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDConstants.swift; sourceTree = "<group>"; };
 		E0D49A592783F610007815BA /* TDItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDItemCell.swift; sourceTree = "<group>"; };
+		E0EDBE5E27AE4DAF00988CF5 /* MSYClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSYClosureViewController.swift; sourceTree = "<group>"; };
 		E0F38149277B1B09002CF7B3 /* SwiftProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F3814C277B1B09002CF7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F3814E277B1B09002CF7B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -345,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				7E9243E62791AE0600D4439E /* MSYAnimationsListViewController.swift */,
+				E09B42A427BE368600D54867 /* 3DEffects */,
 				7E702200279412FA00AE09EC /* 16-SpotifySignIn */,
 				7E7021F52794001C00AE09EC /* 15-SnapchatMenu */,
 				7E7021F22793EC8400AE09EC /* 14-QuoraDots */,
@@ -776,6 +783,15 @@
 			path = "10-Interests";
 			sourceTree = "<group>";
 		};
+		E09B42A427BE368600D54867 /* 3DEffects */ = {
+			isa = PBXGroup;
+			children = (
+				E09B42A527BE373700D54867 /* MSY3DEffectsViewController.swift */,
+				E09B42A727BE37AC00D54867 /* MSY3DEffectsView.swift */,
+			);
+			path = 3DEffects;
+			sourceTree = "<group>";
+		};
 		E0D33A85277BFFE5002ECAF1 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -844,6 +860,22 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		E0EDBE5C27AE4C5900988CF5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDBE5D27AE4C6C00988CF5 /* Closure */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		E0EDBE5D27AE4C6C00988CF5 /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				E0EDBE5E27AE4DAF00988CF5 /* MSYClosureViewController.swift */,
+			);
+			path = Closure;
+			sourceTree = "<group>";
+		};
 		E0F38140277B1B09002CF7B3 = {
 			isa = PBXGroup;
 			children = (
@@ -903,8 +935,9 @@
 		E0F38164277B1FE0002CF7B3 /* UIKit&Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				E0D33AA7277C6C98002ECAF1 /* 02-Stopwatch */,
 				E0D33A95277C1453002ECAF1 /* MSYKitFoundationViewController.swift */,
+				E0EDBE5C27AE4C5900988CF5 /* Foundation */,
+				E0D33AA7277C6C98002ECAF1 /* 02-Stopwatch */,
 				E0D33A98277C2FF2002ECAF1 /* 01-GoodAsOldPhones */,
 			);
 			path = "UIKit&Foundation";
@@ -1029,6 +1062,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0D33AA0277C6261002ECAF1 /* MSYNavigationController.swift in Sources */,
+				E09B42A627BE373700D54867 /* MSY3DEffectsViewController.swift in Sources */,
 				E0D49A5A2783F610007815BA /* TDItemCell.swift in Sources */,
 				E0F38151277B1B09002CF7B3 /* ViewController.swift in Sources */,
 				E0364652277D8CE500C0AE32 /* FBMeBaseCell.swift in Sources */,
@@ -1075,6 +1109,7 @@
 				E01E0B23277EA2E4004E05B7 /* TDItemListDataProvider.swift in Sources */,
 				E0D33A92277C12A1002ECAF1 /* DataSource.swift in Sources */,
 				E00635F027881E7F0017F7D3 /* UIImage+PhotoCollection.swift in Sources */,
+				E09B42A827BE37AC00D54867 /* MSY3DEffectsView.swift in Sources */,
 				E05505FD27859A5700A8E175 /* CandyDetailViewController.swift in Sources */,
 				E0364650277D881400C0AE32 /* UIColor+FBExtension.swift in Sources */,
 				E0243C242785767900D40405 /* UIImage+MSYExtension.swift in Sources */,
@@ -1088,6 +1123,7 @@
 				E0872EA827848F8400C6B2DF /* WorkCell.swift in Sources */,
 				E0F38163277B1C67002CF7B3 /* MSYTabBarCtrConfig.swift in Sources */,
 				E0243C292785885800D40405 /* CandyListViewController.swift in Sources */,
+				E0EDBE5F27AE4DAF00988CF5 /* MSYClosureViewController.swift in Sources */,
 				7E7021FF2794037E00AE09EC /* SnapCommon.swift in Sources */,
 				E0063BD5278453C900E7FEBD /* Work.swift in Sources */,
 				E0063BCD27844E3B00E7FEBD /* ArtistListViewController.swift in Sources */,

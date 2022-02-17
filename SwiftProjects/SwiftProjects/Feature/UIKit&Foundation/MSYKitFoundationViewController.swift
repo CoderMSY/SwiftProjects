@@ -8,6 +8,10 @@
 import UIKit
 
 class MSYKitFoundationViewController: MSYBaseViewController {
+    private let kListTitle_p1 = "Project 01 - GoodAsOldPhones"
+    private let kListTitle_p2 = "Project 02 - Stopwatch"
+    private let kListTitle_closure = "Closure"
+//    private let kListTitle_p4 = "Project 14 - QuoraDots"
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,8 +22,9 @@ class MSYKitFoundationViewController: MSYBaseViewController {
 extension MSYKitFoundationViewController {
     private func setUpTableView() {
         let section = Section(items: [
-            "Project 01 - GoodAsOldPhones",
-            "Project 02 - Stopwatch",
+            kListTitle_p1,
+            kListTitle_p2,
+            kListTitle_closure
         ])
         let dataSource = DataSource(sections: [section])
         
@@ -33,21 +38,33 @@ extension MSYKitFoundationViewController {
         view.addSubview(pluginTableView)
         
         pluginTableView.didSelectRow = { [weak self] (tableView, indexPath) in
-            
-            switch indexPath.row {
+            let selectItem = pluginTableView.dataSource.item(at: indexPath)
+            switch selectItem {
                 
-            case 0:
+            case self?.kListTitle_p1:
                 let tabBarCtr = GoodAsOldPhonesTabBarCtrConfig().tabBarCtr
                 self?.present(tabBarCtr, animated: true, completion: nil)
-//                self?.navigationController?.pushViewController(tabBarCtr, animated: true)
+//                self?.presentNextPage(ctr: tabBarCtr,
+//                                      title: selectItem);
                 break
-            case 1:
+            case self?.kListTitle_p2:
                 self?.present(StopwatchViewController(), animated: true, completion: nil)
-//                self?.navigationController?.pushViewController(StopwatchViewController(), animated: true)
+//                self?.presentNextPage(ctr: StopwatchViewController(),
+//                                      title: selectItem);
                 break
+            case self?.kListTitle_closure:
+                self?.presentNextPage(ctr: MSYClosureViewController(),
+                                      title: selectItem)
             default:
                 break
             }
         }
+    }
+    
+    private func presentNextPage(ctr: UIViewController, title: String?) {
+        ctr.title = title
+        let navCtr = MSYNavigationController(rootViewController: ctr)
+        navCtr.modalPresentationStyle = .fullScreen
+        self.present(navCtr, animated: true, completion: nil)
     }
 }

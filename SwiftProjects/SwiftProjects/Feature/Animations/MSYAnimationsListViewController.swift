@@ -14,6 +14,7 @@ class MSYAnimationsListViewController: MSYBaseViewController {
     private let kListTitle_p14 = "Project 14 - QuoraDots"
     private let kListTitle_p15 = "Project 15 - SnapchatMenu"
     private let kListTitle_p16 = "Project 16 - SpotifySignIn"
+    private let kListTitle_3DEffects = "Project - 3DEffects"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ extension MSYAnimationsListViewController {
             kListTitle_p14,
             kListTitle_p15,
             kListTitle_p16,
+            kListTitle_3DEffects,
         ])
         
         let dataSource = DataSource(sections: [section1])
@@ -66,17 +68,9 @@ extension MSYAnimationsListViewController {
             case self?.kListTitle_p16:
                 self?.presentNextPage(ctr: SpotifyMasterViewController(),
                                       title: selectItem)
-            default:
-                break
-            }
-            
-            switch indexPath.row {
-                
-            case 0:
-            
-                break
-            case 1:
-                break
+            case self?.kListTitle_3DEffects:
+                self?.presentNextPage(ctr: MSY3DEffectsViewController(),
+                                      title: selectItem)
             default:
                 break
             }

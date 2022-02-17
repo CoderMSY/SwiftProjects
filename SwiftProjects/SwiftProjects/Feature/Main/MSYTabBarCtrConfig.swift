@@ -33,14 +33,21 @@ class MSYTabBarCtrConfig: NSObject {
         let libraryAndKitCtr = MSYNavigationController(rootViewController: LibraryAndKitListViewController());
         let cloudVillage1 = MSYNavigationController(rootViewController: UIViewController());
         
-        let viewCtrs = [kitFoundationCtr, listCtr, animationsListCtr, designPatternCtr, libraryAndKitCtr, cloudVillage1]
+        let viewCtrs = [
+            kitFoundationCtr,
+            listCtr,
+            animationsListCtr,
+            designPatternCtr,
+            libraryAndKitCtr,
+            cloudVillage1
+        ]
         
         return viewCtrs
     }
     
     func tabBarItemsAttributes() -> [[String : String]] {
         let itemOne = [
-            CYLTabBarItemTitle: "UIKit",
+            CYLTabBarItemTitle: "UIKit&Foundation",
             CYLTabBarItemImage: "tb_uikit",
             CYLTabBarItemSelectedImage: "tb_uikit_selected"
         ]
